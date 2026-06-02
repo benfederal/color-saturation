@@ -1,0 +1,9 @@
+{
+  "text.autoconfig.color-saturation.title": "Color Saturation",
+  "text.autoconfig.color-saturation.option.hueValue": "Hue",
+  "text.autoconfig.color-saturation.option.saturationValue": "Saturation",
+  "text.autoconfig.color-saturation.option.brightnessValue": "Brightness",
+  "text.autoconfig.color-saturation.option.contrastValue": "Contrast",
+  "key.color-saturation.open_config": "Open Color Saturation",
+  "key.category.color-saturation": "Color Saturation"
+}

@@ -1,0 +1,9 @@
+{
+  "text.autoconfig.color-saturation.title": "Renk Doygunluğu",
+  "text.autoconfig.color-saturation.option.hueValue": "Renk Tonu",
+  "text.autoconfig.color-saturation.option.saturationValue": "Doygunluk",
+  "text.autoconfig.color-saturation.option.brightnessValue": "Parlaklık",
+  "text.autoconfig.color-saturation.option.contrastValue": "Kontrast",
+  "key.color-saturation.open_config": "Renk Doygunluğunu Aç",
+  "key.category.color-saturation": "Renk Doygunluğu"
+}

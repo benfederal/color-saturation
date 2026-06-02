@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "color-saturation",
+  "version": "${version}",
+  "name": "Color Saturation",
+  "description": "Adjust color saturation, hue, brightness and contrast directly in Minecraft without touching monitor settings.",
+  "authors": [
+    "DECCALfederall"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/color-saturation/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "me.colorsaturation.ColorSaturation"
+    ],
+    "client": [
+      "me.colorsaturation.client.ColorSaturationClient"
+    ],
+    "modmenu": [
+      "me.colorsaturation.client.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "color-saturation.mixins.json",
+    {
+      "config": "color-saturation.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cloth-config": "*",
+    "modmenu": "*"
+  }
+}
