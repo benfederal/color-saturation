@@ -23,8 +23,8 @@
           "values": [0.0]
         }
       ],
-      "vertex": "color_saturation",
-      "fragment": "color_saturation"
+      "vertex": "color-saturation:shaders/program/color_saturation",
+      "fragment": "color-saturation:shaders/program/color_saturation"
     }
   ]
 }
