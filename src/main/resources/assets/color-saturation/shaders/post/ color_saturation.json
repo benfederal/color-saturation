@@ -1,7 +1,30 @@
 {
-  "blur": 1.0,
-  "scale": 1.0,
-  "blend": "add",
-  "vertex": "color_saturation",
-  "fragment": "color_saturation"
+  "targets": ["main"],
+  "passes": [
+    {
+      "name": "color_saturation",
+      "intarget": "minecraft:main",
+      "outtarget": "minecraft:main",
+      "uniforms": [
+        {
+          "name": "Saturation",
+          "values": [1.0]
+        },
+        {
+          "name": "Brightness",
+          "values": [0.0]
+        },
+        {
+          "name": "Contrast",
+          "values": [1.0]
+        },
+        {
+          "name": "Hue",
+          "values": [0.0]
+        }
+      ],
+      "vertex": "color_saturation",
+      "fragment": "color_saturation"
+    }
+  ]
 }

@@ -29,6 +29,8 @@ public class ColorSaturationClient implements ClientModInitializer {
             }
         });
 
+        RenderEventListener.register();
+
         me.colorsaturation.ColorSaturation.LOGGER.info("Color Saturation Client initialized!");
     }
 }
