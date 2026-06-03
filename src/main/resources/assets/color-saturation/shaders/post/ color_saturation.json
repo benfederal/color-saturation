@@ -1,0 +1,7 @@
+{
+  "blur": 1.0,
+  "scale": 1.0,
+  "blend": "add",
+  "vertex": "color_saturation",
+  "fragment": "color_saturation"
+}
