@@ -12,6 +12,7 @@
     "sources": ""
   },
   "license": "CC0-1.0",
+  "accessWidener": "color-saturation.accesswidener",
   "icon": "assets/color-saturation/icon.png",
   "environment": "client",
   "entrypoints": {

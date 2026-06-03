@@ -13,20 +13,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(GameRenderer.class)
 public class GameRendererMixin {
 
-
-    @Inject(
-            method = "render",
-            at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/GameRenderer;renderLevel(Lnet/minecraft/client/DeltaTracker;)V", shift = At.Shift.AFTER)
-    )
-    private void onAfterRenderLevel(CallbackInfo ci) {
+    @Inject(method = "render", at = @At("TAIL"))
+    private void onRenderTail(CallbackInfo ci) {
         Minecraft mc = Minecraft.getInstance();
         if (mc.level == null) return;
         if (mc.getOverlay() != null) return;
-
-        // F1 protection
-        if (mc.options.hideGui) {
-            return;
-        }
 
         ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
         SaturationEffect.render(
@@ -35,8 +26,5 @@ public class GameRendererMixin {
                 config.contrastValue,
                 config.hueValue
         );
-
-
-        com.mojang.blaze3d.systems.RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
     }
 }
